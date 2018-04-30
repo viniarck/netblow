@@ -1,0 +1,14 @@
+# The tcp port used by the publisher:
+publish_port: 44505
+ret_port: 44506
+# root dir
+root_dir: /etc/salt
+pidfile: master.pid
+# max number of files to open
+max_open_files: 4096
+worker_threads: 4
+# white list
+autosign_file: /etc/salt/autosign.conf
+#presence_events: True
+transport: tcp
+tcp_keepalive: True

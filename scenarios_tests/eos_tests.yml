@@ -1,0 +1,21 @@
+---
+tests_specs:
+  eos1_interfaces_flap:
+    function: 'interfaces_flap'
+    dut: 'eos1'
+    interfaces: ['Ethernet 7', 'Ethernet 8']
+  eos2_interfaces_flap:
+    function: 'interfaces_flap'
+    dut: 'eos2'
+    interfaces: ['Ethernet 2', 'Ethernet 3']
+
+tests_execution:
+  - tests: [eos1_interfaces_flap]
+    kwargs:
+      iterations: 2
+  - tests: [eos1_interfaces_flap, eos2_interfaces_flap]
+    kwargs:
+      sync: False
+  - tests: [eos1_interfaces_flap, eos2_interfaces_flap]
+    kwargs:
+      duration: 3

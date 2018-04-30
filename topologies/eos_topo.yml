@@ -1,0 +1,19 @@
+---
+devices:
+  eos1:
+    driver: 'eos'
+    hostname: 'labhost'
+    username: 'vrnetlab'
+    password: 'vrnetlab9'
+    optional_args:
+      port: 4443
+  eos2:
+    driver: 'eos'
+    hostname: 'labhost'
+    username: 'vrnetlab'
+    password: 'vrnetlab9'
+    optional_args:
+      port: 4444
+minions:
+  - "minion1"
+  - "minion2"

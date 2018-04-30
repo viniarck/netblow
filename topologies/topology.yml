@@ -1,0 +1,38 @@
+---
+devices:
+  eos1:
+    driver: 'eos'
+    hostname: 'labhost'
+    username: 'vrnetlab'
+    password: 'vrnetlab9'
+    optional_args:
+      port: 4443
+  eos2:
+    driver: 'eos'
+    hostname: 'labhost'
+    username: 'vrnetlab'
+    password: 'vrnetlab9'
+    optional_args:
+      port: 4444
+  junos1:
+    driver: 'junos'
+    hostname: 'labhost'
+    username: 'vrnetlab'
+    password: 'vrnetlab9'
+    optional_args:
+      port: 2224
+  iosxr1:
+    driver: 'iosxr'
+    hostname: 'labhost'
+    username: 'vrnetlab'
+    password: 'vrnetlab9'
+    optional_args:
+      port: 2225
+  ios1:
+    driver: 'ios'
+    hostname: 'labhost'
+    username: 'vrnetlab'
+    password: 'vrnetlab9'
+    optional_args:
+      port: 2226
+minions: ['minion1', 'minion2']

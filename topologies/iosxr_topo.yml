@@ -1,0 +1,9 @@
+---
+devices:
+  iosxr:
+    driver: 'iosxr'
+    hostname: 'labhost'
+    username: 'vrnetlab'
+    password: 'vrnetlab9'
+    optional_args:
+      port: 2225

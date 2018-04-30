@@ -1,0 +1,9 @@
+---
+devices:
+  junos:
+    driver: 'junos'
+    hostname: 'labhost'
+    username: 'vrnetlab'
+    password: 'vrnetlab9'
+    optional_args:
+      port: 2224

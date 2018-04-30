@@ -1,0 +1,10 @@
+master: master
+master_alive_interval: -1
+
+root_dir: /etc/salt
+publish_port: 44505
+master_port: 44506
+
+# presence_events: True
+transport: tcp
+tcp_keepalive: True

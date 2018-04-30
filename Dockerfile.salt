@@ -1,0 +1,18 @@
+FROM base/archlinux:latest
+LABEL maintainer "viniciusarcanjov@gmail.com"
+
+RUN pacman -Syu --noconfirm && \
+    pacman -S --noconfirm \
+    net-tools \
+    fping \
+    iperf3 \
+    python \
+    python-pip \
+    base-devel
+
+
+RUN pip install 'salt==2018.3.0'
+RUN mkdir /etc/salt
+COPY ./salt/minion /etc/salt
+COPY ./salt/master /etc/salt
+COPY ./salt/autosign.conf /etc/salt

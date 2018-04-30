@@ -1,0 +1,8 @@
+FROM python:3.6
+LABEL maintainer "viniciusarcanjov@gmail.com"
+
+RUN mkdir /app
+WORKDIR /app
+
+RUN pip install netblow
+RUN netblow -v

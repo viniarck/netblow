@@ -1,0 +1,33 @@
+version: '2.1'
+services:
+  netblow:
+    image: quay.io/viniciusarcanjo/netblow:0.1
+    stdin_open: true
+    tty: true
+    build:
+      context: .
+      dockerfile: ./Dockerfile.netblow
+    volumes:
+      - .:/app
+  master:
+    image: quay.io/viniciusarcanjo/salt:2018.3.0
+    privileged: true
+    stdin_open: true
+    tty: true
+    command: 'salt-master'
+    build:
+      context: .
+      dockerfile: ./Dockerfile.salt
+    volumes:
+      - /var/log
+  minion:
+    image: quay.io/viniciusarcanjo/salt:2018.3.0
+    privileged: true
+    stdin_open: true
+    tty: true
+    command: 'salt-minion'
+    build:
+      context: .
+      dockerfile: ./Dockerfile.salt
+    volumes:
+      - /var/log
