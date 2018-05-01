@@ -39,12 +39,3 @@ Visit [ReadTheDocs](https://netblow.readthedocs.io/en/latest/), for more informa
 ## Contributing
 
 I am looking for users and contributors, [reach me out](https://twitter.com/forwardingflows) if you're interested.
-
-### Project testing
-
-The following test stages and suites are in place:
-
-- **linters**: flake8, pycodestyle and pydocstyle.
-- **unit**: pytest. All networking I/O are mocked in the CI/CD pipeline.
-- **integration**: pytest. This suite is run outside of the CI/CD pipeline because it needs actual networking devices (JunOS, EOS, IOS-XR and IOS).
-
