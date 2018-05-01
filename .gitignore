@@ -3,3 +3,4 @@ salt/*
 !salt/autosign.conf
 !salt/master
 !salt/minion
+docs/*.xml

@@ -5,4 +5,7 @@ pytest-xdist
 flake8
 pycodestyle<2.4.0 # flake8
 pydocstyle
+sphinx
+sphinx-autobuild
+sphinx_rtd_theme
 -e .
