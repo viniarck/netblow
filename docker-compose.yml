@@ -1,14 +1,12 @@
 version: '2.1'
 services:
   netblow:
-    image: quay.io/viniciusarcanjo/netblow:0.1
+    image: quay.io/viniciusarcanjo/netblow:latest
     stdin_open: true
     tty: true
     build:
       context: .
-      dockerfile: ./Dockerfile.netblow
-    volumes:
-      - .:/app
+      dockerfile: ./Dockerfile.netblow.pypi
   master:
     image: quay.io/viniciusarcanjo/salt:2018.3.0
     privileged: true
