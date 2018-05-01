@@ -10,7 +10,8 @@ install:
   - pip install coveralls
 
 script:
-  - tox
+  - TOXENV=lint tox
+  - TOXENV=unit tox -- -s -vv --cov=netblow tests/unit
 
 after_success:
   - coveralls
