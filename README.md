@@ -1,4 +1,4 @@
-
+[![Build Status](https://travis-ci.org/viniciusarcanjo/netblow.svg?branch=master)](https://travis-ci.org/viniciusarcanjo/netblow)
 
 # netblow
 
