@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/viniciusarcanjo/netblow.svg?branch=master)](https://travis-ci.org/viniciusarcanjo/netblow) [![PyPI](https://img.shields.io/pypi/v/netblow.svg)](https://pypi.python.org/pypi/netblow) [![PyPI Versions](https://img.shields.io/pypi/pyversions/netblow.svg)](https://pypi.python.org/pypi/netblow) [![Coverage Status](https://coveralls.io/repos/github/viniciusarcanjo/netblow/badge.svg?branch=master)](https://coveralls.io/github/viniciusarcanjo/netblow?branch=master)
+[![Build Status](https://travis-ci.org/viniciusarcanjo/netblow.svg?branch=master)](https://travis-ci.org/viniciusarcanjo/netblow) [![Documentation Status](https://readthedocs.org/projects/netblow/badge/?version=latest)](http://netblow.readthedocs.io/en/latest/?badge=latest) [![PyPI](https://img.shields.io/pypi/v/netblow.svg)](https://pypi.python.org/pypi/netblow) [![PyPI Versions](https://img.shields.io/pypi/pyversions/netblow.svg)](https://pypi.python.org/pypi/netblow) [![Coverage Status](https://coveralls.io/repos/github/viniciusarcanjo/netblow/badge.svg?branch=master)](https://coveralls.io/github/viniciusarcanjo/netblow?branch=master)
 
 # netblow
 
@@ -30,7 +30,7 @@ pip3 install netblow --user
 
 ## Docs
 
-Visit [ReadTheDocs](https://netblow.readthedocs.io/en/latest/), for more information about network topologies, installation options, usage, code snippets and examples.
+Visit [ReadTheDocs](https://netblow.readthedocs.io/en/latest/), knock yourself out.
 
 ## Roadmap
 
