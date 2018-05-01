@@ -10,7 +10,7 @@ setup(
     author_email='viniciusarcanjov@gmail.com',
     keywords='network testing netblow napalm eos junos ios iosxr',
     url='http://github.com/viniciusarcanjo/netblow',
-    packages=['netblow', 'netblow/monkey_patch', 'bin'],
+    packages=['netblow', 'netblow/monkey_patch', 'netblow/bin'],
     license='Apache',
     install_requires=['napalm==2.3.1', 'coloredlogs'],
     classifiers=[
@@ -20,13 +20,12 @@ setup(
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
-        'Programming Language :: Python :: 3.7',
         'Operating System :: POSIX :: Linux',
         'Operating System :: MacOS',
     ],
     entry_points='''
         [console_scripts]
-        netblow=bin.netblow_cli:main
+        netblow=netblow.bin.netblow_cli:main
     ''',
     zip_safe=False,
 )
