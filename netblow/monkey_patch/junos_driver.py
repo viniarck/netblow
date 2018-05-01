@@ -1,9 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+"""IOSDriver module."""
 
 import napalm
-import ncclient
-import time
 from jnpr.junos.exception import ConnectClosedError
 from netblow.exceptions import RebootException
 

@@ -1,11 +1,11 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+"""EOSDriver module."""
 
 import http
 import napalm
 from netblow.exceptions import RebootException
 import pyeapi
-
 
 
 class EOSDriver(object):

@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+"""IOSDriver module."""
 
 import napalm
 from netblow.exceptions import RebootException
@@ -54,8 +55,7 @@ class IOSDriver(object):
 
         """
         command = 'reload\n'
-        self.driver.device.send_command(
-            command, expect_string=r'[confirm]')
+        self.driver.device.send_command(command, expect_string=r'[confirm]')
         try:
             # after this command, OSError is expected
             self.driver.device.send_command('\n')
