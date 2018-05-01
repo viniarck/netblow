@@ -52,8 +52,11 @@ def test_iter_once(netblow, caplog):
 
     """
     iters = 10
+    netblow.iter_once = True
     netblow._blow('eos1', iterations=iters)
-    assert "{0}/{0}".format(1) in caplog.text
+    assert "{0}/{0} ".format(1) in caplog.text
+    # tear down
+    netblow.iter_once = False
 
 
 @pytest.mark.skip(msg='test for the next release')

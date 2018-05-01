@@ -11,7 +11,7 @@ def test_load_topology_yml_file():
 
     """
     nb = NetBlow(topo_file='eos_topo.yml', dry_run=True)
-    assert ['eos1', 'eos2'] == list(nb.devices.keys())
+    assert set(['eos1', 'eos2']) == set(nb.devices.keys())
 
 
 def test_load_eos_test_yml_file(topology):

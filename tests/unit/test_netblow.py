@@ -18,14 +18,7 @@ def test_dry_run(topology, netblow, funcs):
     """
     for f in funcs:
         assert isinstance(netblow.__dict__.get(f), MagicMock)
-
-
-def test_load_devices(netblow, topology):
-    """Test load devices.
-
-    """
-    devs = topology['devices']
-    assert netblow.devices == devs
+    assert set(netblow.devices) == set(topology['devices'])
 
 
 def test_patched_drivers_attrs(netblow):
@@ -54,7 +47,7 @@ def test_load_minions(netblow_salt, topology):
     """
     minions = topology['minions']
     nb_minions = list(netblow_salt.minions.keys())
-    assert nb_minions == minions
+    assert set(nb_minions) == set(minions)
 
 
 def test_load_topo_file(topology):
@@ -62,8 +55,8 @@ def test_load_topo_file(topology):
 
     """
     nb = NetBlow(dry_run=True, enable_salt=True, topo_file='topology.yml')
-    assert list(nb.devices.keys()) == list(topology['devices'].keys())
-    assert list(nb.minions.keys()) == topology['minions']
+    assert set(nb.devices.keys()) == set(topology['devices'].keys())
+    assert set(nb.minions.keys()) == set(topology['minions'])
 
 
 def test_exit_func(netblow):
