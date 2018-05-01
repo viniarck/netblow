@@ -1,8 +1,10 @@
-[![Build Status](https://travis-ci.org/viniciusarcanjo/netblow.svg?branch=master)](https://travis-ci.org/viniciusarcanjo/netblow)
+[![Build Status](https://travis-ci.org/viniciusarcanjo/netblow.svg?branch=master)](https://travis-ci.org/viniciusarcanjo/netblow) [![PyPI](https://img.shields.io/pypi/v/netblow.svg)](https://pypi.python.org/pypi/netblow) [![PyPI Versions](https://img.shields.io/pypi/pyversions/netblow.svg)](https://pypi.python.org/pypi/netblow) [![Coverage Status](https://coveralls.io/repos/github/viniciusarcanjo/netblow/badge.svg?branch=master)](https://coveralls.io/github/viniciusarcanjo/netblow?branch=master)
 
 # netblow
 
 Vendor agnostic network testing framework to stress network failures.
+
+![netblow arch](docs/images/arch_topo.png?raw=true "netblow architecture")
 
 ## Why?
 
