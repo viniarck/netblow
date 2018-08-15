@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/viniciusarcanjo/netblow.svg?branch=master)](https://travis-ci.org/viniciusarcanjo/netblow) [![Documentation Status](https://readthedocs.org/projects/netblow/badge/?version=latest)](http://netblow.readthedocs.io/en/latest/?badge=latest) [![PyPI](https://img.shields.io/pypi/v/netblow.svg)](https://pypi.python.org/pypi/netblow) [![PyPI Versions](https://img.shields.io/pypi/pyversions/netblow.svg)](https://pypi.python.org/pypi/netblow) [![Coverage Status](https://coveralls.io/repos/github/viniciusarcanjo/netblow/badge.svg?branch=master)](https://coveralls.io/github/viniciusarcanjo/netblow?branch=master)
+[![Build Status](https://travis-ci.org/viniarck/netblow.svg?branch=master)](https://travis-ci.org/viniarck/netblow) [![Documentation Status](https://readthedocs.org/projects/netblow/badge/?version=latest)](http://netblow.readthedocs.io/en/latest/?badge=latest) [![PyPI](https://img.shields.io/pypi/v/netblow.svg)](https://pypi.python.org/pypi/netblow) [![PyPI Versions](https://img.shields.io/pypi/pyversions/netblow.svg)](https://pypi.python.org/pypi/netblow) [![Coverage Status](https://coveralls.io/repos/github/viniarck/netblow/badge.svg?branch=master)](https://coveralls.io/github/viniarck/netblow?branch=master)
 
 # netblow
 
@@ -19,8 +19,6 @@ Vendor agnostic network testing framework to stress network failures.
 - You can either write your tests directly in Python or in a yml file.
 - Tests can be run either asynchronously or synchronously in multiple devices.
 - Devices re-connections are handled automatically.
-- Data plane validation with salt minions (next release).
-- Memory leak detection (next release).
 
 ## Installation
 
@@ -34,8 +32,11 @@ Visit [ReadTheDocs](https://netblow.readthedocs.io/en/latest/), knock yourself o
 
 ## Roadmap
 
-[Upcoming features and enhancements.](https://github.com/viniciusarcanjo/netblow/issues?q=is%3Aopen+is%3Aissue+label%3Aenhancement)
+[Upcoming features and enhancements.](https://github.com/viniarck/netblow/issues?q=is%3Aopen+is%3Aissue+label%3Aenhancement)
+
+- Data plane validation with salt minions.
+- Memory leak detection.
 
 ## Contributing
 
-I am looking for users and contributors, [reach me out](https://twitter.com/forwardingflows) if you're interested.
+I am looking for users and contributors, [reach me out](https://twitter.com/viniarck) if you're interested.
