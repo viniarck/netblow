@@ -283,8 +283,8 @@ class NetBlow(object):
             err = "Topology doesn't have 'devices'"
             self.log.error(err)
             raise ValueError(err)
-        self.log.info('Devices in the topology {}'.format((list(
-            devices.keys()))))
+        self.log.info('Devices in the topology {}'.format(
+            (list(devices.keys()))))
         for k, v in devices.items():
             self.devices[k] = v
             try:
@@ -462,12 +462,11 @@ class NetBlow(object):
                 self.log.info('Closing connections to all devices')
             for device_name, driver in self.drivers.items():
                 if driver.state == NetBlow.TESTING:
-                    # TODO handle discard_config()
                     pass
                 driver.close()
 
             if self.salt:
-                # TODO: handle salt-pepper tear down.
+                # TODO: handle salt-pepper tear down (depends on salt)
                 pass
 
         if self.async_threads:
@@ -646,7 +645,7 @@ class NetBlow(object):
             driver.state = NetBlow.TESTING
             driver.func_running = func.__name__
 
-            # TODO implement the actual callback though
+            # TODO implement the actual callback though (depends on salt)
             # callback to await the results later
             callback = self._blow_callback
             t = Thread(
