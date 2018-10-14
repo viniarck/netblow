@@ -50,11 +50,11 @@ def test_interfaces_async(get_netblow):
 
     for dut in ['eos1', 'eos2']:
         netblow.interfaces_down(dut, sync=sync, interfaces=interfaces)
-    netblow.await()
+    netblow.await_threads()
 
     for dut in ['eos1', 'eos2']:
         netblow.interfaces_up(dut, sync=sync, interfaces=interfaces)
-    netblow.await()
+    netblow.await_threads()
 
 
 def test_interfaces_sync(get_netblow):

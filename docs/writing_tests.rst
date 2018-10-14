@@ -55,7 +55,7 @@ Let's say you want to perform some asynchronous interface flaps and afterwards, 
       # Interfaces flap stress async on 'eos1' and 'junos1'. Iterates 3 times.
       for dut, intfs in zip(devices, interfaces):
           nb.interfaces_flap(dut, interfaces=intfs, sync=False, iterations=3)
-      nb.await()  # async await
+      nb.await_threads()  # async await
 
       # Completely tear down current BGP synchronously during 30 secs.
       cmds = [['no router bgp'], ['delete protocols bgp']]

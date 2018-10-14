@@ -368,7 +368,7 @@ class NetBlow(object):
                 except AttributeError:
                     self.log.error("Function '{}' doesn't exist".format(test))
             if not sync:
-                self.await()
+                self.await_threads()
 
     def _val_dut_key(self, dut):
         """Validate if dut key is present. If it is, return the driver.
@@ -470,7 +470,7 @@ class NetBlow(object):
                 pass
 
         if self.async_threads:
-            self.log.warn('You started async tests but never called await()')
+            self.log.warn('Ran async tests but never called await_threads()')
 
     def _exit(self, exit_code=0):
         """Exit and tear down netblow with a specific exit code.
@@ -498,7 +498,7 @@ class NetBlow(object):
                     'Waiting for state {}. Currently running {}...'.format(
                         state, self.drivers[dut].func_running))
 
-    def await(self):
+    def await_threads(self):
         """Await all async threads."""
         self.log.info('Waiting for async tests to finish...')
         for t in self.async_threads:
