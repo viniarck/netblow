@@ -1,7 +1,7 @@
 image: python
 
 stages:
-- lint
+- build
 - test
 
 before_script:
@@ -11,29 +11,32 @@ before_script:
 
 after_script:
 - pip install codecov
-- codecov --token=7d117e6b-aab6-4283-ab19-166dafc38cf5
+- codecov --token=6e5a0e34-0039-4f75-b487-66c59c7c7550
 
-python35:
+python35-lint:
   image: python:3.5
-  stage: lint
-  script: TOXENV=lint tox -e py35
+  stage: build
+  script:
+    - flake8 netblow
+    - pycodestyle netblow
+    - pydocstyle netblow
 
 python34:
   image: python:3.4
   stage: test
-  script: TOXENV=unit tox -e py34
+  script: pytest -s -vv --cov=netblow tests/unit
 
 python35:
   image: python:3.5
   stage: test
-  script: TOXENV=unit tox -e py35
+  script: pytest -s -vv --cov=netblow tests/unit
 
 python36:
   image: python:3.6
   stage: test
-  script: TOXENV=unit tox -e py36
+  script: pytest -s -vv --cov=netblow tests/unit
 
 python37:
   image: python:3.7-rc
   stage: test
-  script: TOXENV=unit tox -e py37
+  script: pytest -s -vv --cov=netblow tests/unit
