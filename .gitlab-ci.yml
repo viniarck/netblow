@@ -31,9 +31,6 @@ python36:
   image: python:3.6
   stage: test
   script: pytest -s -vv --cov=netblow tests/unit
-  after_script:
-  - pip install codecov
-  - codecov --token=6e5a0e34-0039-4f75-b487-66c59c7c7550
 
 python37:
   image: python:3.7-rc
