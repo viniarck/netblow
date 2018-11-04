@@ -63,7 +63,7 @@ def _str_to_level(string):
 def _create_dir(directory):
     """Create directory."""
     if not os.path.isdir(directory):
-        os.mkdir(directory)
+        os.makedirs(directory)
 
 
 def find_file(file_name, sub_dir=None):

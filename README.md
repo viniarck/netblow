@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/viniarck/netblow.svg?branch=master)](https://travis-ci.org/viniarck/netblow) [![Documentation Status](https://readthedocs.org/projects/netblow/badge/?version=latest)](http://netblow.readthedocs.io/en/latest/?badge=latest) [![PyPI](https://img.shields.io/pypi/v/netblow.svg)](https://pypi.python.org/pypi/netblow) [![PyPI Versions](https://img.shields.io/pypi/pyversions/netblow.svg)](https://pypi.python.org/pypi/netblow)
+[[![pipeline status](https://gitlab.com/viniarck/netblow/badges/master/pipeline.svg)](https://gitlab.com/viniarck/netblow/commits/master)[![Documentation Status](https://readthedocs.org/projects/netblow/badge/?version=latest)](http://netblow.readthedocs.io/en/latest/?badge=latest) [![PyPI](https://img.shields.io/pypi/v/netblow.svg)](https://pypi.python.org/pypi/netblow) [![PyPI Versions](https://img.shields.io/pypi/pyversions/netblow.svg)](https://pypi.python.org/pypi/netblow)
 
 # netblow
 
